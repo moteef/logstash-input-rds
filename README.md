@@ -8,3 +8,12 @@
       }
     }
 
+## Publishing gem
+
+```bash
+$ gem build logstash-input-rds.gemspec
+...
+$ gem push --key github \
+  --host https://rubygems.pkg.github.com/moteef \
+  <the gem file generate from the build command>
+```
